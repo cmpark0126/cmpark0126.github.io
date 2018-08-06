@@ -1,17 +1,23 @@
 ---
-title:  "Gemified Theme -- Beta Release"
-modified: 2016-10-06T16:03:49-04:00
-categories: 
-  - Jekyll
+title:  "cuDNN - Host memory에서 Device memory로 옮기는 법"
+modified: 2018-08-06T17:00:00-:30:00
+categories:
+  - Develop
 tags:
-  - update
+  - cuDNN
+  - WICWIU
+  - DeepLearning
+  - Framework
 ---
-
-Hot on the heels of Jekyll v3.3.0 is a beta release of Minimal Mistakes... as a gemified theme.
 
 {% include base_path %}
 
-{% include toc title="Getting Started" %}
+{% include toc title="cuDNN_Host2Memory" %}
+
+cuDNN은 nvidia gpu를 사용할 때, 특히 딥러닝 파트를 구현할 때, 거의 필수적으로 사용되고 있는 라이브러리이다.
+
+물론 일부 라이브러리는 cuda를 이용해서 딥러닝 알고리즘을 직접 구현하기도 하지만 (대부분의 슈퍼 개발자는 아무래도 그게 더 편하려나) 나같이 gpu 코딩 자체가 익숙하지 않은 사람들에게는 그게 쉽지 않다.
+
 
 [`minimal-mistakes-jekyll`](https://rubygems.org/gems/minimal-mistakes-jekyll) can only be used with Jekyll proper. If you're hosting on GitHub Pages or using that gem the theme won't work. 3rd party themes haven't been white-listed so it's a no go for now.
 
@@ -19,7 +25,7 @@ Fine with all that? Great. Let's continue.
 
 If you're migrating a site already using Minimal Mistakes and haven't customized any of the `_includes`, `_layouts`, `_sass` partials, or `assets` this should be quick and painless.
 
-## Step 1: Remove Theme Files 
+## Step 1: Remove Theme Files
 
 Remove `_includes`, `_layouts`, `_sass`, `assets` folders and files within. You won't need these anymore as they're bundled in the theme.
 
@@ -31,7 +37,7 @@ Replace `gem "github-pages` or `gem "jekyll"` with `gem "jekyll", "~> 3.3.0"`. Y
 
 [^update-jekyll]: You could also run `bundle update jekyll` to update Jekyll.
 
-Add the Minimal Mistakes theme gem: 
+Add the Minimal Mistakes theme gem:
 
 ```ruby
 gem "minimal-mistakes-jekyll"
@@ -66,7 +72,7 @@ If this is a new site be sure to add the following files to `_data/` and customi
 - [`_data/ui-text.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml) - UI text [documentation]({{ base_path }}/docs/ui-text/)
 - [`_data/navigation.yml`](https://github.com/mmistakes/minimal-mistakes/blob/master/_data/navigation.yml) - navigation [documentation]({{ base_path }}/docs/navigation/)
 
-You'll also need to: 
+You'll also need to:
 
 - Replace `<site root>/index.html` with a modified [Minimal Mistakes `index.html`](https://github.com/mmistakes/minimal-mistakes/blob/master/index.html).
 - Change `layout: post` in `_posts/0000-00-00-welcome-to-jekyll.markdown` to `layout: single`.

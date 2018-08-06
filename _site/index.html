@@ -1,6 +1,6 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.12.0 by Michael Rose
+  Minimal Mistakes Jekyll Theme 4.9.0 by Michael Rose
   Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
@@ -9,16 +9,46 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Cmpark</title>
-<meta name="description" content="CMPARK">
+<!-- begin SEO -->
 
 
+
+
+
+
+
+
+
+
+<title>cmpark</title>
+
+
+
+
+<meta name="description" content="developer blog">
+
+
+
+
+<meta name="author" content="Chun-Myong Park">
+
+<meta name="naver-site-verification" content="b82306681a7f295c96378798aef6849495be33fd"/>
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ko">
-<meta property="og:site_name" content="Cmpark">
-<meta property="og:title" content="Cmpark">
-<meta property="og:url" content="http://localhost:4000/">
+<meta property="og:site_name" content="cmpark">
+<meta property="og:title" content="cmpark">
+
+
+  <link rel="canonical" href="http://localhost:4000/">
+  <meta property="og:url" content="http://localhost:4000/">
+
+
+<meta property="og:description" content="developer blog">
+
+
+
+
 
 
 
@@ -36,7 +66,9 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/">
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/profile.jpeg">
+
 
 
 
@@ -47,10 +79,21 @@
   <script type="application/ld+json">
     {
       "@context": "http://schema.org",
-      "@type": "Person",
-      "name": "Chun-Myong Park",
+      "@type": "Organization",
       "url": "http://localhost:4000",
-      "sameAs": null
+      "logo": "http://localhost:4000/assets/images/profile.jpeg"
+    }
+  </script>
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "Chun-Myong Park",
+      "url" : "http://localhost:4000",
+      "sameAs" : null
     }
   </script>
 
@@ -60,10 +103,10 @@
 
 
 
-<!-- end _includes/seo.html -->
+<!-- end SEO -->
 
 
-<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Cmpark Feed">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="cmpark Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -75,7 +118,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
 
 <!--[if lte IE 9]>
   <style>
@@ -95,10 +138,9 @@
 
     <!-- start custom head snippets -->
 
-<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
 
 <!-- end custom head snippets -->
-
   </head>
 
   <body class="layout--home">
@@ -111,12 +153,17 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="/">Cmpark</a>
+        <a class="site-title" href="http://localhost:4000/">cmpark</a>
         <ul class="visible-links">
           
             
             <li class="masthead__menu-item">
-              <a href="https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/" >Quick-Start Guide</a>
+              <a href="http://localhost:4000/archive/" >Archive</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="http://localhost:4000/tags/" >Tag</a>
             </li>
           
         </ul>
@@ -127,7 +174,7 @@
           </svg>
         </button>
         
-        <button class="greedy-nav__toggle hidden" type="button">
+        <button class="greedy-nav__toggle" type="button">
           <span class="visually-hidden">토글 메뉴</span>
           <div class="navicon"></div>
         </button>
@@ -147,18 +194,28 @@
   <div class="sidebar sticky">
   
 
-
 <div itemscope itemtype="http://schema.org/Person">
 
+  
+    <div class="author__avatar">
+      
+
+      
+        
+        <a href="http://localhost:4000/">
+          <img src="http://localhost:4000/assets/images/profile.jpeg" alt="Chun-Myong Park" itemprop="image">
+        </a>
+      
+    </div>
   
 
   <div class="author__content">
     
-      <h3 class="author__name" itemprop="name">Your Name</h3>
+      <a href="http://localhost:4000/"><h3 class="author__name" itemprop="name">Chun-Myong Park</h3></a>
     
     
       <p class="author__bio" itemprop="description">
-        I am an amazing person.
+        I'm a student in Handong Global University. Majors in Computer Science. Main interest in machine learning algorithms and how to applicate it.
       </p>
     
   </div>
@@ -168,7 +225,18 @@
     <ul class="author__urls social-icons">
       
         <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
-          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Somewhere</span>
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Korea</span>
+        </li>
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:cmpark0126@gmail.com">
+            <meta itemprop="email" content="cmpark0126@gmail.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+          </a>
         </li>
       
 
@@ -191,9 +259,11 @@
       
 
       
-
-      
-
+        <li>
+          <a href="https://github.com/cmpark0126" itemprop="sameAs">
+            <i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
       
 
       
@@ -239,7 +309,7 @@
 
   <div class="archive">
     
-      <h1 id="page-title" class="page__title"></h1>
+      <h1 class="page__title"></h1>
     
     <h3 class="archive__subtitle">최근 포스트</h3>
 
@@ -253,20 +323,32 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="/jekyll/gemified-theme-beta/" rel="permalink">Gemified Theme – Beta Release
+        <a href="http://localhost:4000/develop/cuDNN-Host2Device/" rel="permalink">cuDNN - Host memory에서 Device memory로 옮기는 법
 </a>
       
     </h2>
     
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-
-
-
-
-  2 분 소요
+    <p class="archive__item-excerpt" itemprop="description">
 </p>
+  </article>
+</div>
+
+  
+
+
+
+<div class="list__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     
-    <p class="archive__item-excerpt" itemprop="description">Hot on the heels of Jekyll v3.3.0 is a beta release of Minimal Mistakes… as a gemified theme.
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/jekyll-apply-theme/" rel="permalink">Jekyll 블로그 테마 적용하기 (minimal-mistakes)
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">jekyll 블로그를 시작하기 위한 준비를 저번 포스트에서 끝냈다.
+이제 테마를 적용하고자 여러 테마를 찾던중 정말 괜찮은 테마를 발견했고 그것을 적용하는 과정을 포스팅하려고 한다.
 
 </p>
   </article>
@@ -282,8 +364,10 @@
 
     
       <div class="search-content">
-        <div class="search-content__inner-wrap"><input type="text" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
-    <div id="results" class="results"></div></div>
+        <div class="search-content__inner-wrap">
+  <input type="text" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  <div id="results" class="results"></div>
+</div>
       </div>
     
 
@@ -300,9 +384,11 @@
     
     
     
+      <li><a href="https://github.com/cmpark0126"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
     
     
-    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> 피드</a></li>
+    
+    <li><a href="http://localhost:4000/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> 피드</a></li>
   </ul>
 </div>
 
@@ -312,15 +398,17 @@
     </div>
 
     
-  <script src="/assets/js/main.min.js"></script>
-  <script src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+  <script src="http://localhost:4000/assets/js/main.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
 
 
 
+  
+  
+  <script defer src="http://localhost:4000/assets/js/lunr/lunr.min.js"></script>
+  <script defer src="http://localhost:4000/assets/js/lunr/lunr-store.js"></script>
+  <script defer src="http://localhost:4000/assets/js/lunr/lunr-en.js"></script>
 
-<script src="/assets/js/lunr/lunr.min.js"></script>
-<script src="/assets/js/lunr/lunr-store.js"></script>
-<script src="/assets/js/lunr/lunr-en.js"></script>
 
 
 
