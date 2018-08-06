@@ -5,7 +5,7 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko"
@@ -84,9 +84,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Chun-Myong Park"
+  name             : "박천명(Chun-Myong Park)"
   avatar           : "/assets/images/profile.jpeg"
-  bio              : "I'm a student in Handong Global University. Majors in Computer Science. Main interest in machine learning algorithms and how to applicate it."
+  bio              : "한동대학교에서 컴퓨터공학을 전공하고 있습니다."
   location         : "Korea"
   email            : "cmpark0126@gmail.com"
   uri              :
