@@ -15,9 +15,6 @@ tags:
 
 설명에서는 WICWIU의 설명을 겸하여 진행한다.
 
-
-{% include toc title="cuDNN_Host2Memory" %}
-
 ## WICWIU란?
 
 WICWIU는 국내 대학 최초로 공개하는 딥러닝 오픈소스 프레임워크로,
