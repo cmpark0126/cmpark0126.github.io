@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://junhobaik.github.io/sitemap.xml
+Sitemap: http://cmpark0126.github.io/sitemap.xml
