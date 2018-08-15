@@ -1,46 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-08-06T22:17:50+09:00</updated><id>http://localhost:4000/</id><title type="html">cmpark</title><subtitle>developer blog</subtitle><author><name>박천명(Chun-Myong Park)</name><email>cmpark0126@gmail.com</email></author><entry><title type="html">cuDNN(0) - WICWIU LINUX GPU 버전 설치 : 필요없는 분들은 넘어가셔도 문제가 없습니다.</title><link href="http://localhost:4000/develop/cuDNN-0-InstallWICWIU/" rel="alternate" type="text/html" title="cuDNN(0) - WICWIU LINUX GPU 버전 설치 : 필요없는 분들은 넘어가셔도 문제가 없습니다." /><published>2018-08-06T00:00:00+09:00</published><updated>2018-08-06T00:00:00+09:00</updated><id>http://localhost:4000/develop/cuDNN-0-InstallWICWIU</id><content type="html" xml:base="http://localhost:4000/develop/cuDNN-0-InstallWICWIU/">&lt;p&gt;이 글은 우리 연구실에서 개발한 WICWIU API를 이해시키기 위한 용도로 사용될 것이기 때문에,
-일반적인 설명과는 조금 다를 것이라는 것에서 양해를 구한다.&lt;/p&gt;
-
-&lt;p&gt;설명에서는 WICWIU의 설명을 겸하여 진행한다.&lt;/p&gt;
-
-&lt;aside class=&quot;sidebar__right&quot;&gt;
-&lt;nav class=&quot;toc&quot;&gt;
-    &lt;header&gt;&lt;h4 class=&quot;nav__title&quot;&gt;&lt;i class=&quot;fas fa-file-alt&quot;&gt;&lt;/i&gt; cuDNN_Host2Memory&lt;/h4&gt;&lt;/header&gt;
-&lt;ul class=&quot;toc__menu&quot; id=&quot;markdown-toc&quot;&gt;
-  &lt;li&gt;&lt;a href=&quot;#wicwiu란&quot; id=&quot;markdown-toc-wicwiu란&quot;&gt;WICWIU란?&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#왜-cudnn을&quot; id=&quot;markdown-toc-왜-cudnn을&quot;&gt;왜 cuDNN을?&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#cudnn이란&quot; id=&quot;markdown-toc-cudnn이란&quot;&gt;cuDNN이란?&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#cudnn-라이브러리-사용준비하기-wicwiu를-중심으로&quot; id=&quot;markdown-toc-cudnn-라이브러리-사용준비하기-wicwiu를-중심으로&quot;&gt;cuDNN 라이브러리 사용준비하기 (WICWIU를 중심으로)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#끝&quot; id=&quot;markdown-toc-끝&quot;&gt;끝&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-  &lt;/nav&gt;
-&lt;/aside&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-08-16T00:53:08+09:00</updated><id>http://localhost:4000/</id><title type="html">cmpark’s blog</title><subtitle>developer blog</subtitle><author><name>박천명(Chun-Myong Park)</name><email>cmpark0126@gmail.com</email></author><entry><title type="html">WICWIU(0) - WICWIU LINUX GPU 버전 설치</title><link href="http://localhost:4000/WICWIU_0/" rel="alternate" type="text/html" title="WICWIU(0) - WICWIU LINUX GPU 버전 설치" /><published>2018-08-16T00:00:00+09:00</published><updated>2018-08-16T00:00:00+09:00</updated><id>http://localhost:4000/WICWIU_0</id><content type="html" xml:base="http://localhost:4000/WICWIU_0/">&lt;p&gt;참고 : 이 글은 한동대학교 김인중 교수님 연구실에서 개발한 WICWIU API를 이해시키기 위한 목적으로 쓰여진 글입니다.&lt;/p&gt;
 
 &lt;h2 id=&quot;wicwiu란&quot;&gt;WICWIU란?&lt;/h2&gt;
 
 &lt;p&gt;WICWIU는 국내 대학 최초로 공개하는 딥러닝 오픈소스 프레임워크로,
-나는 이 프레임워크을 설계하고 개발하는 팀의 1기로 참여하여 진행했다.&lt;/p&gt;
+나(박천명)는 이 프레임워크을 설계하고 개발하는 팀의 1기로 참여하여 진행했다.&lt;/p&gt;
 
 &lt;p&gt;현재는 3기까지 프로젝트가 진행되었으며, 프로그램도 어느정도 규모를 가지게 되었다.
 그렇기에 이 블로그 글은 개인적인 정보 정리와 함께 인수인계 자료를 겸하고자 한다.&lt;/p&gt;
-
-&lt;h2 id=&quot;왜-cudnn을&quot;&gt;왜 cuDNN을?&lt;/h2&gt;
-
-&lt;p&gt;학부 프로젝트로 C++ 딥러닝 라이브러리를 개발하게 되었다.
-라이브러리 개발에는 GPU를 지원해야 한다는 조건이 있었다.&lt;/p&gt;
-
-&lt;p&gt;그렇게 나는 cuDNN을 사용하게 되었다.&lt;/p&gt;
-
-&lt;h2 id=&quot;cudnn이란&quot;&gt;cuDNN이란?&lt;/h2&gt;
-
-&lt;p&gt;cuDNN은 nvidia gpu를 사용할 때, 특히 딥러닝 파트를 구현할 때,
-거의 필수적으로 사용되고 있는 라이브러리이다.
-물론 일부 라이브러리는 cuda를 이용해서 딥러닝 알고리즘을 직접 구현하기도 하지만,
-평범한 나같은 개발자에게는 그게 그리 쉬운 일이 아니다.
-그래서 nvidia의 슈퍼개발자들이 딥러닝에서 사용하는 기본적인 알고리즘을 구현해둔 것이 cuDNN이다.&lt;/p&gt;
-
-&lt;p&gt;WICWIU의 GPU 코드는 거의 대부분 cuDNN의 함수를 사용하여 구현되어 있다.&lt;/p&gt;
 
 &lt;h2 id=&quot;cudnn-라이브러리-사용준비하기-wicwiu를-중심으로&quot;&gt;cuDNN 라이브러리 사용준비하기 (WICWIU를 중심으로)&lt;/h2&gt;
 
@@ -78,7 +44,7 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;프로그램이 동작한다면, 현재 cuda와 cuDNN 라이브러리를 정확하게 include하고 있다는 의미이다. 축하한다.&lt;/li&gt;
+  &lt;li&gt;프로그램이 동작한다면, 현재 cuda와 cuDNN 라이브러리를 정확하게 include하고 있다는 의미이다.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;끝&quot;&gt;끝&lt;/h2&gt;
@@ -86,4 +52,4 @@
 
 &lt;p&gt;…감개무량하다. 한편으로는 그 많은 코드들을 어떻게 다 정리할까 걱정이 앞서기는 한다.&lt;/p&gt;
 
-&lt;p&gt;어디까지 해볼 수 있을지, 일단 정리해보겠다.&lt;/p&gt;</content><author><name>박천명(Chun-Myong Park)</name><email>cmpark0126@gmail.com</email></author><category term="cuDNN" /><category term="WICWIU" /><category term="DeepLearning" /><category term="Framework" /><summary type="html">이 글은 우리 연구실에서 개발한 WICWIU API를 이해시키기 위한 용도로 사용될 것이기 때문에, 일반적인 설명과는 조금 다를 것이라는 것에서 양해를 구한다.</summary></entry></feed>
+&lt;p&gt;어디까지 해볼 수 있을지, 일단 정리해보겠다.&lt;/p&gt;</content><author><name>박천명(Chun-Myong Park)</name><email>cmpark0126@gmail.com</email></author><category term="WICWIU" /><summary type="html">참고 : 이 글은 한동대학교 김인중 교수님 연구실에서 개발한 WICWIU API를 이해시키기 위한 목적으로 쓰여진 글입니다.</summary></entry></feed>
