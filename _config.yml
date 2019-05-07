@@ -86,7 +86,7 @@ analytics:
 author:
   name             : "박천명(Chun-Myong Park)"
   avatar           : "/assets/images/profile.jpeg"
-  bio              : "한동대학교에서 컴퓨터공학을 전공하고 있습니다."
+  bio              : "한동대학교에서 컴퓨터공학을 전공하고 있습니다. <a href="/docs/PARKCHUNMYONG_cv.pdf" target="_blank">Here is my CV link</a>"
   location         : "Korea"
   email            : "cmpark0126@gmail.com"
   uri              :
