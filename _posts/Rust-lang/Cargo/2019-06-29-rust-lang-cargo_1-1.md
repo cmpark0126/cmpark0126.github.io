@@ -1,16 +1,14 @@
 ---
-title:  "Rust-lang(1) - 1. Getting Started"
+title:  "Rust-lang/Cargo(1) - 1. Getting Started"
 modified: 2019-06-29T12:00:00-:30:00
 categories:
-  - Rust-lang
+  - Rust-lang/Cargo
 tags:
-  - [PL, Rust-lang]
+  - [Rust-lang, Rust-lang/Cargo]
 ---
 
-Note! 자료를 잘못 reference하고 있어서 공식 버전에 맞게 내용 추가 예정입니다.
-
-* Rust 언어를 스터디한 내용을 정리합니다.
-* Text book: https://doc.rust-lang.org/book/
+* Rust 패키지 매니저인 cargo를 스터디한 내용을 정리합니다.
+* Text book: https://doc.rust-lang.org/cargo/
 
 ## 1.1. Installation
 
