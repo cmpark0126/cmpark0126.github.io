@@ -1,5 +1,5 @@
 ---
-title:  "Rust-lang/Cargo(1) - 1. Getting Started"
+title:  "Rust-lang/Cargo - 1. Getting Started(1)"
 modified: 2019-06-29T12:00:00-:30:00
 categories:
   - Rust-lang/Cargo
