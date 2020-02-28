@@ -1,6 +1,6 @@
 ---
 title:  "간단한 소개"
-modified: 2019-05-07T23:00:00-:30:00
+modified: 2020-02-29T23:00:00-:30:00
 categories:
   - AboutMe
 tags:
