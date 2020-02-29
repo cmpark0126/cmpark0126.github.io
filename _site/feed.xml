@@ -1,12 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-29T15:19:20+09:00</updated><id>http://localhost:4000/</id><title type="html">cmpark’s blog</title><subtitle>developer blog</subtitle><author><name>박천명(Chun-Myong Park)</name><email>cmpark0126@gmail.com</email></author><entry><title type="html">Who Am I?</title><link href="http://localhost:4000/aboutme/AboutMe/" rel="alternate" type="text/html" title="Who Am I?" /><published>2020-02-29T00:00:00+09:00</published><updated>2020-02-29T00:00:00+09:00</updated><id>http://localhost:4000/aboutme/AboutMe</id><content type="html" xml:base="http://localhost:4000/aboutme/AboutMe/">&lt;p&gt;I am a Master Student at &lt;a href=&quot;https://cp.kaist.ac.kr/&quot;&gt;Concurrency and Parallelism Laboratory&lt;/a&gt;, &lt;a href=&quot;https://cs.kaist.ac.kr/&quot;&gt;KAIST School of Computing&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-29T15:27:05+09:00</updated><id>http://localhost:4000/</id><title type="html">cmpark’s blog</title><subtitle>developer blog</subtitle><author><name>박천명(Chun-Myong Park)</name><email>chunmyong.park@kaist.ac.kr</email></author><entry><title type="html">Who Am I?</title><link href="http://localhost:4000/aboutme/AboutMe/" rel="alternate" type="text/html" title="Who Am I?" /><published>2020-02-29T00:00:00+09:00</published><updated>2020-02-29T00:00:00+09:00</updated><id>http://localhost:4000/aboutme/AboutMe</id><content type="html" xml:base="http://localhost:4000/aboutme/AboutMe/">&lt;p&gt;I am a Master Student at &lt;a href=&quot;https://cp.kaist.ac.kr/&quot;&gt;Concurrency and Parallelism Laboratory&lt;/a&gt;, &lt;a href=&quot;https://cs.kaist.ac.kr/&quot;&gt;KAIST School of Computing&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;My research interests are in designing and verifying concurrent and parallel systems. In particular, I want to solve various real-world problems associated with these topics. I believe these studies will help advance the areas such as Deep Learning where performance issues are critical.&lt;/p&gt;
-
-&lt;h2 id=&quot;contact&quot;&gt;Contact&lt;/h2&gt;
-&lt;ul&gt;
-  &lt;li&gt;Email: &lt;a href=&quot;chunmyong.park@kaist.ac.kr&quot;&gt;chunmyong.park@kaist.ac.kr&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Pages: [&lt;a href=&quot;https://github.com/cmpark0126&quot;&gt;github&lt;/a&gt;], [&lt;a href=&quot;https://scholar.google.co.kr/citations?user=8ez_CnwAAAAJ&amp;amp;hl&quot;&gt;google scholar&lt;/a&gt;]&lt;/li&gt;
-&lt;/ul&gt;
 
 &lt;h2 id=&quot;educations&quot;&gt;Educations&lt;/h2&gt;
 &lt;ul&gt;
@@ -59,6 +53,8 @@
   &lt;li&gt;&lt;strong&gt;Chunmyong Park&lt;/strong&gt;, Jeewoong Kim, Yunho Kee, Jihyeon Kim, Injung Kim, WICWIU: C++ based Deep Learning Open Source Framework with Readability and Extensibility, Korea Computer Congress (KCC), Jun 20-22, 2018, &lt;strong&gt;(Best paper awarded)&lt;/strong&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
+&lt;p&gt;&lt;em&gt;The full list of the publications can be found at &lt;a href=&quot;https://scholar.google.co.kr/citations?user=8ez_CnwAAAAJ&amp;amp;hl&quot;&gt;Google Scholar&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+
 &lt;h2 id=&quot;projects&quot;&gt;Projects&lt;/h2&gt;
 &lt;h3 id=&quot;industry-funded-projects&quot;&gt;Industry funded projects&lt;/h3&gt;
 &lt;ul&gt;
@@ -84,4 +80,4 @@
   &lt;li&gt;Best Paper Award, Korea Computer Congress (KCC), Jun 2018&lt;/li&gt;
   &lt;li&gt;SW-mileage Scholarship, Jun 2018&lt;/li&gt;
   &lt;li&gt;Academic Excellence Scholarship, Jun 2014&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>박천명(Chun-Myong Park)</name><email>cmpark0126@gmail.com</email></author><category term="AboutMe" /><summary type="html">I am a Master Student at Concurrency and Parallelism Laboratory, KAIST School of Computing.</summary></entry></feed>
+&lt;/ol&gt;</content><author><name>박천명(Chun-Myong Park)</name><email>chunmyong.park@kaist.ac.kr</email></author><category term="AboutMe" /><summary type="html">I am a Master Student at Concurrency and Parallelism Laboratory, KAIST School of Computing.</summary></entry></feed>

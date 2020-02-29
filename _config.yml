@@ -88,7 +88,7 @@ author:
   avatar           : "/assets/images/profile.jpg"
   bio              : "I am a Master Student at Concurrency and Parallelism Laboratory, KAIST School of Computing."
   location         : "Korea"
-  email            : "cmpark0126@gmail.com"
+  email            : "chunmyong.park@kaist.ac.kr"
   uri              :
   home             : "#" # null (default), "absolute or relative url to link to author home"
   bitbucket        :
