@@ -87,10 +87,10 @@ author:
   name             : "박천명(Chun-Myong Park)"
   avatar           : "/assets/images/profile.jpg"
   bio              : "I am a Master Student at Concurrency and Parallelism Laboratory, KAIST School of Computing."
-  location         : "Korea"
+  location         : 
   email            : "cmpark0126@gmail.com"
   uri              :
-  home             : "#" # null (default), "absolute or relative url to link to author home"
+  home             : "#/aboutme/AboutMe/" # null (default), "absolute or relative url to link to author home"
   bitbucket        :
   codepen          :
   dribbble         :
