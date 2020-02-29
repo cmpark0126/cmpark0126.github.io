@@ -1,81 +1,60 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-08-16T01:25:46+09:00</updated><id>http://localhost:4000/</id><title type="html">cmpark’s blog</title><subtitle>developer blog</subtitle><author><name>박천명(Chun-Myong Park)</name><email>cmpark0126@gmail.com</email></author><entry><title type="html">WICWIU(1) - WICWIU를 만들게 된 계기(수정중)</title><link href="http://localhost:4000/WICWIU_1/" rel="alternate" type="text/html" title="WICWIU(1) - WICWIU를 만들게 된 계기(수정중)" /><published>2018-08-16T00:00:00+09:00</published><updated>2018-08-16T00:00:00+09:00</updated><id>http://localhost:4000/WICWIU_1</id><content type="html" xml:base="http://localhost:4000/WICWIU_1/">&lt;p&gt;WICWIU : What I Create, What I Understand&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-29T14:07:20+09:00</updated><id>http://localhost:4000/</id><title type="html">cmpark’s blog</title><subtitle>developer blog</subtitle><author><name>박천명(Chun-Myong Park)</name><email>cmpark0126@gmail.com</email></author><entry><title type="html">Who Am I?</title><link href="http://localhost:4000/aboutme/AboutMe/" rel="alternate" type="text/html" title="Who Am I?" /><published>2020-02-29T00:00:00+09:00</published><updated>2020-02-29T00:00:00+09:00</updated><id>http://localhost:4000/aboutme/AboutMe</id><content type="html" xml:base="http://localhost:4000/aboutme/AboutMe/">&lt;p&gt;I am a Master Student at &lt;a href=&quot;https://cp.kaist.ac.kr/&quot;&gt;Concurrency and Parallelism Laboratory&lt;/a&gt;, &lt;a href=&quot;https://cs.kaist.ac.kr/&quot;&gt;KAIST School of Computing&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&quot;서론&quot;&gt;서론&lt;/h2&gt;
+&lt;p&gt;My research interests are in designing and verifying concurrent and parallel systems. In particular, I want to solve various real-world problems associated with these topics. I believe these studies will help advance the areas such as Deep Learning where performance issues are critical.&lt;/p&gt;
 
-&lt;p&gt;18년 현재 많은 국내외 딥러닝 연구의 경우 해외기반의 오픈소스 프레임워크를 사용하여 진행되고 있다.&lt;/p&gt;
-
-&lt;p&gt;이는 딥러닝이 생각보다 단순한 형태의 구조를 지니고 있음과는 상반되게,&lt;/p&gt;
-
-&lt;p&gt;실제로 구현에 들어가보면 고려해야 할 부분이 상당히 많다는 이슈가 관련하지 않을까 생각해본다.&lt;/p&gt;
-
-&lt;p&gt;또한 개발 분야에서는 최전방을 달리는 유수의 기업 혹은 대학들이 최적화까지 깔끔하게 끝내서 딥러닝 라이브러리를 무료로 제공하고 있는 현 주소에서, 라이브러리를 다시 바닥에서부터 짜고, 최적화하는 작업은 일종의 시간 낭비와 같을 수 밖에 없다.&lt;/p&gt;
-
-&lt;p&gt;하지만 다른 측면에서 생각해보면, 현재 많은 라이브러리는 해외 기반으로 제작되어 있으며 이를 유지보수하는 큰 집단은 결국 그 본거지를 해외에 두고 있다는 것을 생각해볼 필요가 있다.&lt;/p&gt;
-
-&lt;p&gt;예를 들어, 당장 내일 프로그램을 검사하고 제출해야 하는 상황에 있을 때, 라이브러리에서 심각한 결함 혹은 버그가 발견되었다고 생각해보자. 당연히 라이브러리를 유지보수하는 집단에 이슈를 날려 답변을 기다리거나 하는 노력을 기울여야 하는 상황이다. 하지만, 외국의 시간대는 한국과는 다를 가능성이 매우 높다. 또한 언어의 차이로 인해 이슈를 전달하는 과정에서 미스매치가 이루어질 가능성도 높다.&lt;/p&gt;
-
-&lt;p&gt;그럼 이제 기한을 맞추지 못하게 되는 것이다. (두둥)&lt;/p&gt;
-
-&lt;p&gt;여기에서 얻을 수 있는 교훈은 여러가지가 있을 수 있겠지만, 나는 하나에 집중해보고자 한다. 이 이야기에 등장하는 개발자의 문제는 &lt;b&gt;자신이 사용하는 프로그램을 정확히 이해하지 못하고 사용&lt;/b&gt;했다는 것이다. 자신의 결과물에 크리티컬한 영향을 미치는 라이브러리를 사용할 때에는 보다 신중을 기해야 하며, 문제가 발생했을 때는 자신이 직접 커스텀할 수 있는 능력을 가질 필요가 있다. 하지만, 실제로는 그렇게 하기 힘들다는 것을 우리는 모두 알고 있다.&lt;/p&gt;
-
-&lt;p&gt;그렇다면 되도록 문제가 발생했을 때, 최대한 빨리 해결을 볼 수 있는 라이브러리를 사용해야 한다. 가장 좋은 것은 자신이 개발하는 것이며, 두번째로 좋은 것은 사내에서 개발한 라이브러리를 사용하는 것이다. 그리고 정말 어쩔 수 없이 외부의 라이브러리를 사용해야 한다면, 익숙함과 동시에 문제해결력이 빠른 집단의 라이브러리를 사용할 필요가 있다. 이는 시간, 거리, 그리고 능력을 모두 고려하여 결정해야 한다.&lt;/p&gt;
-
-&lt;p&gt;말이 길어졌지만, 결국 말하고 싶은 것은 이거다. 우리나라에도 실력있는 라이브러리 개발자가 필요하다. 외국에서 개발되는 라이브러리에만 의존하지 않고 기술적 종속에서 벗어날 수 있는 그런 노력들이 꾸준하게 이루어질 필요가 있다는 것이다. 이 프로젝트는 그런 의의를 가지고 시작되었다.&lt;/p&gt;
-
-&lt;p&gt;현재 WICWIU는 좋은 성능을 보이는 라이브러리는 아니다. 하지만 앞으로 계속해서 발전해나가기를 기대하면서 이 글을 시작한다.&lt;/p&gt;
-
-&lt;h2 id=&quot;wicwiu의-특징&quot;&gt;WICWIU의 특징&lt;/h2&gt;</content><author><name>박천명(Chun-Myong Park)</name><email>cmpark0126@gmail.com</email></author><category term="WICWIU" /><summary type="html">WICWIU : What I Create, What I Understand</summary></entry><entry><title type="html">WICWIU(0) - WICWIU LINUX GPU 버전 설치</title><link href="http://localhost:4000/WICWIU_0/" rel="alternate" type="text/html" title="WICWIU(0) - WICWIU LINUX GPU 버전 설치" /><published>2018-08-16T00:00:00+09:00</published><updated>2018-08-16T00:00:00+09:00</updated><id>http://localhost:4000/WICWIU_0</id><content type="html" xml:base="http://localhost:4000/WICWIU_0/">&lt;p&gt;참고 : 이 글은 한동대학교 김인중 교수님 연구실에서 개발한 WICWIU API를 이해시키기 위한 목적으로 쓰여진 글입니다.&lt;/p&gt;
-
-&lt;h2 id=&quot;wicwiu란&quot;&gt;WICWIU란?&lt;/h2&gt;
-
-&lt;p&gt;WICWIU는 국내 대학 최초로 공개하는 딥러닝 오픈소스 프레임워크로,
-나(박천명)는 이 프레임워크을 설계하고 개발하는 팀의 1기로 참여하여 진행했다.&lt;/p&gt;
-
-&lt;p&gt;현재는 3기까지 프로젝트가 진행되었으며, 프로그램도 어느정도 규모를 가지게 되었다.
-그렇기에 이 블로그 글은 개인적인 정보 정리와 함께 인수인계 자료를 겸하고자 한다.&lt;/p&gt;
-
-&lt;h2 id=&quot;cudnn-라이브러리-사용준비하기&quot;&gt;cuDNN 라이브러리 사용준비하기&lt;/h2&gt;
-
+&lt;h2 id=&quot;contact&quot;&gt;Contact&lt;/h2&gt;
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;우선 cuda와 cuDNN이 서버에 설치가 되어있는지를 확인할 필요가 있다. &lt;a href=&quot;https://crmn.tistory.com/31&quot;&gt;cuda &amp;amp; cuDNN 버전 확인 방법&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;다음으로는 WICWIU에서 서버의 cuda와 cuDNN 버전을 지원하는지 확인할 필요가 있다. &lt;a href=&quot;https://github.com/WICWIU/WICWIU&quot;&gt;WICWIU GitHub 주소&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;위의 단계를 모두 마쳤다면 다음 코드를 ‘.profile’에 추가한다. (컴파일에 필요한 라이브러리의 위치를 알려주기 위해)&lt;/p&gt;
-  &lt;/li&gt;
+  &lt;li&gt;Email: chunmyong.park@kaist.ac.kr&lt;/li&gt;
+  &lt;li&gt;GitHub: &lt;a href=&quot;https://github.com/cmpark0126&quot;&gt;cmpark0126&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Place: Rm. 4441, Bldg. E3-1, KAIST (+82-42-350-7878)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# set PATH so it includes user's private bin directories&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;PATH=&quot;$HOME/bin:$HOME/.local/bin:$PATH&quot;&lt;/span&gt;
-
-&lt;span class=&quot;s&quot;&gt;export PATH=/usr/local/cuda/bin:$PATH&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/cuda/lib64&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:/usr/local/cuda/include&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;export C_INCLUDE_PATH=$C_INCLUDE_PATH:/usr/local/cuda/include&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;export WICWIU_PATH=/home/chuniee/DLOP/Header&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
+&lt;h2 id=&quot;educations&quot;&gt;Educations&lt;/h2&gt;
 &lt;ul&gt;
-  &lt;li&gt;파일에 위의 내용을 추가했다면 이제 본격적으로 라이브러리를 실행해보자.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;M.S in School of Computing, KAIST&lt;/strong&gt;, Sep 2019 – Present
+    &lt;ul&gt;
+      &lt;li&gt;advisor: Prof. Jeehoon Kang&lt;/li&gt;
+      &lt;li&gt;laboratory: &lt;a href=&quot;https://cp.kaist.ac.kr/&quot;&gt;Concurrency and Parallelism Laboratory&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;B.S in School of Computer Science &amp;amp; Electrical Engineering, Handong Global 
+University&lt;/strong&gt;, Mar 2014 – Aug 2019&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;language-yml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s&quot;&gt;$ git clone https://github.com/WICWIU/WICWIU&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 라이브러리 설치&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;$ cd WICWIC/tutorials/MNIST&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# tutorial 코드 위치&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;$ make&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# gcc, nvcc를 사용하여 컴파일 진행&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;$ ./main&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# 실행&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
+&lt;h2 id=&quot;activities&quot;&gt;Activities&lt;/h2&gt;
 &lt;ul&gt;
-  &lt;li&gt;프로그램이 동작한다면, 현재 cuda와 cuDNN 라이브러리를 정확하게 include하고 있다는 의미이다.&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;President, Handong Artificial Intelligence Leading Organization&lt;/strong&gt; (HAILO), Mar 2018 – Aug 2018
+    &lt;ul&gt;
+      &lt;li&gt;AI association&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Member, RPM: Handong Start-up competition Management Team&lt;/strong&gt;, Feb 2015 – Dec 2016&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Chief of Administrative Affairs, Secretariat of UNAI ASPIRE Korea&lt;/strong&gt;, Feb 2015 – Feb 2017&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;설명을-본격적으로-시작하기-전에&quot;&gt;설명을 본격적으로 시작하기 전에…&lt;/h2&gt;
-&lt;p&gt;WICWIU 프로젝트를 처음 시작할 때, ‘언젠가 이런 글을 적지 않을까’하고 1기 팀원들과 농담조로 얘기했던 적이 있다. 딱 1년 전이었다.&lt;/p&gt;
+&lt;h2 id=&quot;experiences&quot;&gt;Experiences&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Intern, KakaoBrain&lt;/strong&gt;, Jul 2019 – Aug 2019
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;torchlars&lt;/strong&gt;: Implement &lt;a href=&quot;https://arxiv.org/abs/1708.03888&quot;&gt;LARS(Layer-wise Adaptive Rate Scaling)&lt;/a&gt; using PyTorch, [&lt;a href=&quot;https://github.com/kakaobrain/torchlars&quot;&gt;github&lt;/a&gt;], [&lt;a href=&quot;https://www.kakaobrain.com/blog/113&quot;&gt;blog post&lt;/a&gt;]&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Intern, DeepBio&lt;/strong&gt;, Jan 2018 – Feb 2018
+    &lt;ul&gt;
+      &lt;li&gt;&lt;strong&gt;CAMELYON17 task&lt;/strong&gt;: Automated detection and classification of breast cancer metastases using Pytorch, [&lt;a href=&quot;https://github.com/cmpark0126/CamelyonTask&quot;&gt;github&lt;/a&gt;]&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Research Assistant, Deep Learning Lab&lt;/strong&gt; (DLLAB), &lt;strong&gt;Handong Global University&lt;/strong&gt;, Mar 2017 – Jun 2019
+    &lt;ul&gt;
+      &lt;li&gt;director: Prof. Injung Kim&lt;/li&gt;
+      &lt;li&gt;WICWIU: A deep learning library in C/C++, [&lt;a href=&quot;https://github.com/WICWIU/WICWIU&quot;&gt;github&lt;/a&gt;], [&lt;a href=&quot;https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE07503145&amp;amp;language=ko_KR&quot;&gt;thesis&lt;/a&gt;]&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Administrative assistant, Asia-Pacific Center for Theoretical Physics&lt;/strong&gt; (APCTP), Sep 2015 – Feb 2016&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Administrative assistant, The Secretary’s Office of Handong Global University&lt;/strong&gt;, Mar 2015 – Aug 2017&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;…감개무량하다. 한편으로는 그 많은 코드들을 어떻게 다 정리할까 걱정이 앞서기는 한다.&lt;/p&gt;
-
-&lt;p&gt;어디까지 해볼 수 있을지, 일단 정리해보겠다.&lt;/p&gt;</content><author><name>박천명(Chun-Myong Park)</name><email>cmpark0126@gmail.com</email></author><category term="WICWIU" /><summary type="html">참고 : 이 글은 한동대학교 김인중 교수님 연구실에서 개발한 WICWIU API를 이해시키기 위한 목적으로 쓰여진 글입니다.</summary></entry></feed>
+&lt;h2 id=&quot;publications&quot;&gt;Publications&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;The full list of the publications can be found at &lt;a href=&quot;https://scholar.google.co.kr/citations?user=8ez_CnwAAAAJ&amp;amp;hl&quot;&gt;Google Scholar&lt;/a&gt;; more information at my &lt;a href=&quot;https://cmpark0126.github.io/assets/docs/PARKCHUNMYONG_cv.pdf&quot;&gt;Curriculum Vitae&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>박천명(Chun-Myong Park)</name><email>cmpark0126@gmail.com</email></author><category term="AboutMe" /><summary type="html">I am a Master Student at Concurrency and Parallelism Laboratory, KAIST School of Computing.</summary></entry></feed>
