@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-29T14:07:20+09:00</updated><id>http://localhost:4000/</id><title type="html">cmpark’s blog</title><subtitle>developer blog</subtitle><author><name>박천명(Chun-Myong Park)</name><email>cmpark0126@gmail.com</email></author><entry><title type="html">Who Am I?</title><link href="http://localhost:4000/aboutme/AboutMe/" rel="alternate" type="text/html" title="Who Am I?" /><published>2020-02-29T00:00:00+09:00</published><updated>2020-02-29T00:00:00+09:00</updated><id>http://localhost:4000/aboutme/AboutMe</id><content type="html" xml:base="http://localhost:4000/aboutme/AboutMe/">&lt;p&gt;I am a Master Student at &lt;a href=&quot;https://cp.kaist.ac.kr/&quot;&gt;Concurrency and Parallelism Laboratory&lt;/a&gt;, &lt;a href=&quot;https://cs.kaist.ac.kr/&quot;&gt;KAIST School of Computing&lt;/a&gt;.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-29T15:02:54+09:00</updated><id>http://localhost:4000/</id><title type="html">cmpark’s blog</title><subtitle>developer blog</subtitle><author><name>박천명(Chun-Myong Park)</name><email>cmpark0126@gmail.com</email></author><entry><title type="html">Who Am I?</title><link href="http://localhost:4000/aboutme/AboutMe/" rel="alternate" type="text/html" title="Who Am I?" /><published>2020-02-29T00:00:00+09:00</published><updated>2020-02-29T00:00:00+09:00</updated><id>http://localhost:4000/aboutme/AboutMe</id><content type="html" xml:base="http://localhost:4000/aboutme/AboutMe/">&lt;p&gt;I am a Master Student at &lt;a href=&quot;https://cp.kaist.ac.kr/&quot;&gt;Concurrency and Parallelism Laboratory&lt;/a&gt;, &lt;a href=&quot;https://cs.kaist.ac.kr/&quot;&gt;KAIST School of Computing&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;My research interests are in designing and verifying concurrent and parallel systems. In particular, I want to solve various real-world problems associated with these topics. I believe these studies will help advance the areas such as Deep Learning where performance issues are critical.&lt;/p&gt;
 
 &lt;h2 id=&quot;contact&quot;&gt;Contact&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;Email: chunmyong.park@kaist.ac.kr&lt;/li&gt;
-  &lt;li&gt;GitHub: &lt;a href=&quot;https://github.com/cmpark0126&quot;&gt;cmpark0126&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Pages: [&lt;a href=&quot;https://github.com/cmpark0126&quot;&gt;cmpark0126&lt;/a&gt;], [&lt;a href=&quot;https://scholar.google.co.kr/citations?user=8ez_CnwAAAAJ&amp;amp;hl&quot;&gt;Google Scholar&lt;/a&gt;]&lt;/li&gt;
   &lt;li&gt;Place: Rm. 4441, Bldg. E3-1, KAIST (+82-42-350-7878)&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -17,8 +17,7 @@
       &lt;li&gt;laboratory: &lt;a href=&quot;https://cp.kaist.ac.kr/&quot;&gt;Concurrency and Parallelism Laboratory&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;B.S in School of Computer Science &amp;amp; Electrical Engineering, Handong Global 
-University&lt;/strong&gt;, Mar 2014 – Aug 2019&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;B.S in School of Computer Science &amp;amp; Electrical Engineering, Handong Global University&lt;/strong&gt;, Mar 2014 – Aug 2019&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;activities&quot;&gt;Activities&lt;/h2&gt;
@@ -34,12 +33,12 @@ University&lt;/strong&gt;, Mar 2014 – Aug 2019&lt;/li&gt;
 
 &lt;h2 id=&quot;experiences&quot;&gt;Experiences&lt;/h2&gt;
 &lt;ul&gt;
-  &lt;li&gt;&lt;strong&gt;Intern, KakaoBrain&lt;/strong&gt;, Jul 2019 – Aug 2019
+  &lt;li&gt;&lt;strong&gt;Intern, Kakao Brain&lt;/strong&gt;, Jul 2019 – Aug 2019
     &lt;ul&gt;
       &lt;li&gt;&lt;strong&gt;torchlars&lt;/strong&gt;: Implement &lt;a href=&quot;https://arxiv.org/abs/1708.03888&quot;&gt;LARS(Layer-wise Adaptive Rate Scaling)&lt;/a&gt; using PyTorch, [&lt;a href=&quot;https://github.com/kakaobrain/torchlars&quot;&gt;github&lt;/a&gt;], [&lt;a href=&quot;https://www.kakaobrain.com/blog/113&quot;&gt;blog post&lt;/a&gt;]&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;&lt;strong&gt;Intern, DeepBio&lt;/strong&gt;, Jan 2018 – Feb 2018
+  &lt;li&gt;&lt;strong&gt;Intern, Deep Bio&lt;/strong&gt;, Jan 2018 – Feb 2018
     &lt;ul&gt;
       &lt;li&gt;&lt;strong&gt;CAMELYON17 task&lt;/strong&gt;: Automated detection and classification of breast cancer metastases using Pytorch, [&lt;a href=&quot;https://github.com/cmpark0126/CamelyonTask&quot;&gt;github&lt;/a&gt;]&lt;/li&gt;
     &lt;/ul&gt;
@@ -55,6 +54,39 @@ University&lt;/strong&gt;, Mar 2014 – Aug 2019&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;publications&quot;&gt;Publications&lt;/h2&gt;
+&lt;h3 id=&quot;refereed-journal-articles&quot;&gt;Refereed journal articles&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Chunmyong Park&lt;/strong&gt;, Jeewoong Kim, Yunho Kee, Jihyeon Kim, Seonggyeol Yoon, Eunseo Choi, Injung Kim, C++ based General-purpose Open Source Deep Learning Framework, WICWIU, Journal of KIISE, Mar 2019 (written in Korean)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;refereed-domestic-conference-papers-written-in-korean&quot;&gt;Refereed domestic conference papers (written in Korean)&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;strong&gt;Chunmyong Park&lt;/strong&gt;, Jeewoong Kim, Yunho Kee, Jihyeon Kim, Injung Kim, WICWIU: C++ based Deep Learning Open Source Framework with Readability and Extensibility, Korea Computer Congress (KCC), Jun 20-22, 2018, &lt;strong&gt;(Best paper awarded)&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;projects&quot;&gt;Projects&lt;/h2&gt;
+&lt;h3 id=&quot;industry-funded-projects&quot;&gt;Industry funded projects&lt;/h3&gt;
 &lt;ul&gt;
-  &lt;li&gt;The full list of the publications can be found at &lt;a href=&quot;https://scholar.google.co.kr/citations?user=8ez_CnwAAAAJ&amp;amp;hl&quot;&gt;Google Scholar&lt;/a&gt;; more information at my &lt;a href=&quot;https://cmpark0126.github.io/assets/docs/PARKCHUNMYONG_cv.pdf&quot;&gt;Curriculum Vitae&lt;/a&gt;.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>박천명(Chun-Myong Park)</name><email>cmpark0126@gmail.com</email></author><category term="AboutMe" /><summary type="html">I am a Master Student at Concurrency and Parallelism Laboratory, KAIST School of Computing.</summary></entry></feed>
+  &lt;li&gt;&lt;strong&gt;Research assistant&lt;/strong&gt;, 비휘발성 메모리로 인한 프로그래밍 방식 변화 및 이득 연구, 한국전자통신연구원 (ETRI), Sep 2018 – Dec 2019&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Research assistant&lt;/strong&gt;, 머신러닝 학습 및 추론 엔진간 연동을 위한 데이터 모델 어뎁터 모듈 구현, 한국전자통신연구원 (ETRI), Jul 2018 – Jun 2019&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;open-source-projects&quot;&gt;Open Source projects&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Developer&lt;/strong&gt;: A LARS(Layer-wise Adaptive Rate Scaling) implementation in PyTorch, Kakao Brain, Jul 2019 – Oct 2019, [&lt;a href=&quot;https://github.com/kakaobrain/torchlars&quot;&gt;github&lt;/a&gt;], [&lt;a href=&quot;https://www.kakaobrain.com/blog/113&quot;&gt;blog post&lt;/a&gt;]&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Research assistant&lt;/strong&gt;, A deep learning framework in C/C++, DLLAB, Jul 2017 – Jun 2019, [&lt;a href=&quot;https://github.com/WICWIU/WICWIU&quot;&gt;github&lt;/a&gt;]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;personal-projects&quot;&gt;Personal projects&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Implementation of 32bits MIPS using Verilog, Nov 2018 – Dec 2018 [&lt;a href=&quot;https://github.com/cmpark0126/MIPS_32bits&quot;&gt;github&lt;/a&gt;]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;awards-and-scholarships&quot;&gt;Awards and Scholarships&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;Special Prize in Portfolio Competition, Dec 2018&lt;/li&gt;
+  &lt;li&gt;SW-mileage Scholarship, Dec 2018&lt;/li&gt;
+  &lt;li&gt;Best Paper Award, Korea Computer Congress (KCC), Jun 2018&lt;/li&gt;
+  &lt;li&gt;SW-mileage Scholarship, Jun 2018&lt;/li&gt;
+  &lt;li&gt;Academic Excellence Scholarship, Jun 2014&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>박천명(Chun-Myong Park)</name><email>cmpark0126@gmail.com</email></author><category term="AboutMe" /><summary type="html">I am a Master Student at Concurrency and Parallelism Laboratory, KAIST School of Computing.</summary></entry></feed>
